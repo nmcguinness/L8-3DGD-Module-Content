@@ -33,17 +33,23 @@ Interior level design is not a secondary concern addressed after core systems ar
 **On interior performance in Unreal Engine.** There is no sky atmosphere contributing fill light. Your indirect bounce illumination is entirely Lumen's responsibility, and Lumen in enclosed spaces is expensive if you let it be. Tight rooms with clear occlusion boundaries — walls that fully enclose volumes, doorframes that break sightlines — are significantly cheaper to render than open-plan spaces with long unobstructed sight distances. Design for occlusion from the blockout stage, not as a post-hoc optimisation.
 
 <!-- Search: "Resident Evil 2 Remake" "police station" screenshot press kit | Source: capcom-europe.com/press/ | Use the main hall shot with central statue -->
-![Resident Evil 2 – Police Station](/images/interior/resident-evil-2-police-station.jpg)
+<a href="./images/interior/resident-evil-2-police-station.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/resident-evil-2-police-station.jpg" alt="Resident Evil 2 – Police Station">
+</a>
 
 *RE2's Police Station is the canonical reference for readable interior grammar at mid-budget production scale. Constrained corridors force legible decision points; doorframe reveals preview the next space before commitment; lighting hierarchy is established entirely through practical sources. The complexity is editorial, not technical — which is why it is achievable at student scale.*
 
 <!-- Search: "Mass Effect Legendary Edition" "Normandy CIC" screenshot | Source: ea.com/press | Use entry or overhead angle showing hub layout -->
-![Mass Effect – Normandy Interior](/images/interior/mass-effect-normandy.png)
+<a href="./images/interior/mass-effect-normandy.png" target="_blank" rel="noopener">
+  <img src="./images/interior/mass-effect-normandy.png" alt="Mass Effect – Normandy Interior">
+</a>
 
 *The Normandy CIC is the reference model for hub-and-spoke interior design at a compact scale. Every department radiates from a legible central position. The player always knows where they are and how to return to neutral. Hub-and-spoke layout at this scale is not complex to build — it is a discipline of restraint and clarity.*
 
 <!-- Search: "Red Dead Redemption 2" saloon interior press screenshot | Source: rockstargames.com/newswire | Valentine or Flatneck Station saloon, showing bar/tables/entrance depth -->
-![Red Dead Redemption 2 – Saloon](/images/interior/red-dead-redemption-salon.png)
+<a href="./images/interior/red-dead-redemption-salon.png" target="_blank" rel="noopener">
+  <img src="./images/interior/red-dead-redemption-salon.png" alt="Red Dead Redemption 2 – Saloon">
+</a>
 
 *The RDR2 saloon demonstrates three-depth layering — bar at the rear, tables at mid-ground, entrance at foreground — that the player reads instinctively without UI guidance. Every zone serves a functional gameplay purpose. The layout communicates social hierarchy, function, and movement logic simultaneously.*
 
@@ -79,12 +85,16 @@ Before leaving the greybox, every interior must satisfy the following tests:
 - Place the default mannequin at every key position — door frames, counters, interaction props — and confirm all proportions are correct at eye height.
 
 <!-- Search: "The Last of Us Part I" hallway interior screenshot | Source: playstation.com/en-us/press-releases/ | Use a corridor with a bend or debris obstruction breaking the sightline — Pittsburgh hotel section ideal -->
-![The Last of Us – Hallway](/images/interior/the-last-of-us-hallway.jpg)
+<a href="./images/interior/the-last-of-us-hallway.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/the-last-of-us-hallway.jpg" alt="The Last of Us – Hallway">
+</a>
 
 *TLOU's hallways are blocked out to control sightlines and pacing before assets are placed. The slight bends, debris occlusion, and elevation shifts are all greybox decisions — they define how the space plays. The assets follow the decisions; they do not make them.*
 
 <!-- Search: "Control" "Federal Bureau of Control" interior brutalist screenshot | Source: remedygames.com/press/ | Central Executive floor — open concrete volumes with small human-scale objects -->
-![Control – Interior Composition](/images/interior/control-interior.jpg)
+<a href="./images/interior/control-interior.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/control-interior.jpg" alt="Control – Interior Composition">
+</a>
 
 *Control's interiors use deliberate negative space — large empty volumes surrounding small human-scale objects — as a primary design tool. Empty floor communicates exposure, scale, and pacing. Negative space is a greybox decision, not a decoration decision.*
 
@@ -121,7 +131,9 @@ When viewed from the entry point, a functional interior reads across three plane
 Avoid placing your most important interactable element at the entry point. Make the player read the space before they interact with it.
 
 <!-- Search: "Skyrim Anniversary Edition" tavern interior screenshot | Source: bethesda.net/en/press | The Bannered Mare in Whiterun — shot from entrance showing bar, tables, and private rooms in one frame -->
-![Skyrim – Tavern Interior](/images/interior/skyrim-bannered-mare.jpg)
+<a href="./images/interior/skyrim-bannered-mare.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/skyrim-bannered-mare.jpg" alt="Skyrim – Tavern Interior">
+</a>
 
 *Skyrim's Bannered Mare illustrates the three-depth rule clearly from its entrance sightline: bar at the background, tables at mid-ground, entry mat at foreground. The player reads the entire space in a single glance and immediately understands where every activity type lives.*
 
@@ -176,7 +188,9 @@ For spaces where the gameplay state changes — a puzzle solved, a mission compl
 Implement state-based lighting through **Blueprint timeline-driven interpolation of light intensity and colour properties**. A Timeline node driving a Lerp between two light colour and intensity values, triggered by the relevant gameplay event, is a straightforward Blueprint pattern with no architecture risk. Keep transition durations short — one to two seconds is sufficient for a gameplay-reactive state change.
 
 <!-- Search: "Dark Souls Remastered" enemy silhouette screenshot | Source: bandainamcoent.com/press | Enemy backlit against bright archway or window — Anor Londo archer knights against exterior light is ideal -->
-![Dark Souls – Enemy Silhouette](/images/interior/dark-souls-corridor.png)
+<a href="./images/interior/dark-souls-corridor.png" target="_blank" rel="noopener">
+  <img src="./images/interior/dark-souls-corridor.png" alt="Dark Souls – Enemy Silhouette">
+</a>
 
 *The point interest principle applied to character readability: the subject is identifiable at range because the brightest area of the frame is directly behind it, creating immediate silhouette contrast. Apply the same logic to your interaction zones — the brightest point in any zone should be the element the player needs to find.*
 
@@ -235,7 +249,9 @@ Your interaction verbs imply specific spatial relationships between player and o
 **Collect** removes the prop from the scene. The prop's pre-collection position must be legible from the approach path, and the visual feedback on collection must be immediate and unambiguous.
 
 <!-- Search: "Gears 5" cover combat interior screenshot | Source: news.xbox.com/en-us/press/ | Elevated or slightly top-down shot showing cover geometry layout -->
-![Gears of War – Cover Combat](/images/interior/gears-of-war-cover-combat.jpg)
+<a href="./images/interior/gears-of-war-cover-combat.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/gears-of-war-cover-combat.jpg" alt="Gears of War – Cover Combat">
+</a>
 
 *Gears' cover placements are determined by combat requirements first, dressed aesthetically second. Every piece of cover exists because the encounter needs the player to be able to crouch there at a specific moment. Apply this logic to every zone in your interior: every spatial decision should be justifiable by reference to a mechanic.*
 
@@ -258,7 +274,9 @@ Hubs in management or progression games must communicate **current state** spati
 In Unreal, bind element state to **light component properties and material parameter collections**. An element that needs attention might carry a slightly brighter, warmer light and a subtle particle effect. An idle element might be cooler and darker. These signals should be readable from the hub's central position without the player approaching each element to check its state individually. Environmental state communication reduces UI dependency and increases spatial legibility simultaneously.
 
 <!-- Search: "Skyrim" Riverwood overview screenshot | Source: bethesda.net/en/press | Slightly elevated shot showing main thoroughfare with buildings radiating from it -->
-![Skyrim – Riverwood Layout](/images/interior/skyrim-riverwood.jpg)
+<a href="./images/interior/skyrim-riverwood.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/skyrim-riverwood.jpg" alt="Skyrim – Riverwood Layout">
+</a>
 
 *Riverwood, used here as an exterior analogue, demonstrates hub-and-spoke circulation logic: a central thoroughfare with clearly differentiated destinations radiating from it. The player navigates by spatial memory after a single visit. The principle scales directly to interior hub design — spoke destinations must be identifiable from the hub centre without UI assistance.*
 
@@ -332,7 +350,9 @@ Environmental storytelling is the practice of embedding narrative information in
 It is not placing lots of props. A room full of random themed objects is set dressing without authorship. Every prop intended to communicate narrative must be placed with deliberate spatial logic. Why is this object here? What does its specific state — not just its presence, but its current condition — communicate? Could a player read its narrative role without being told?
 
 <!-- Search: "BioShock Remastered" interior environmental storytelling screenshot | Source: 2k.com/en-US/press/ | Dentist's office, orphanage classroom, or Kashmir Restaurant opening — room where narrative reads from prop arrangement alone -->
-![Bioshock – Interior Storytelling](/images/interior/bioshock-dentists-office.png)
+<a href="./images/interior/bioshock-dentists-office.png" target="_blank" rel="noopener">
+  <img src="./images/interior/bioshock-dentists-office.png" alt="Bioshock – Interior Storytelling">
+</a>
 
 *BioShock's rooms are the benchmark: every object communicates something about who was here and what happened to them. The quality of the materials tells you what Rapture was; their current state tells you what happened to it. A player should be able to reconstruct the narrative of a scene from its physical contents before any dialogue or interface element confirms what they have read.*
 
