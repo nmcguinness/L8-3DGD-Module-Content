@@ -1,6 +1,6 @@
 ---
 title: "Interior Level Design — Project Companion"
-subtitle: "Application to ReBeat, Cob Cop, and Ale & Ambition"
+subtitle: "Application to ReBeat, Cobb Cop, and Ale & Ambition"
 author: "Niall McGuinness"
 institute: "Dundalk Institute of Technology"
 programme: "BSc (Hons) in Computing in Games Development"
@@ -22,7 +22,7 @@ format:
 
 # Interior Level Design — Project Companion 2025–26
 
-> This document applies the principles in the **Interior Level Design base notes** directly to this year's three games: ReBeat, Cob Cop, and Ale & Ambition. It is a production support document, not a principles document — read the base notes first. This companion expires at the end of the 2025–26 academic year.
+> This document applies the principles in the **Interior Level Design base notes** directly to this year's three games: ReBeat, Cobb Cop, and Ale & Ambition. It is a production support document, not a principles document — read the base notes first. This companion expires at the end of the 2025–26 academic year.
 
 ---
 
@@ -38,7 +38,7 @@ Section numbers match the base document throughout so you can cross-reference di
 
 All three projects this year depend heavily on interior quality, but the nature of that dependency differs across the games.
 
-**Cob Cop** is the most interior-dependent project in the cohort. The investigation loop is entirely interior-driven — the quality of the investigation spaces is the quality of the game. There is no exterior environment to provide visual breathing room or perceptual contrast. Every scene must be credible, readable, and evidence-legible without UI assistance. Interior design here is not craft — it is mechanics.
+**Cobb Cop** is the most interior-dependent project in the cohort. The investigation loop is entirely interior-driven — the quality of the investigation spaces is the quality of the game. There is no exterior environment to provide visual breathing room or perceptual contrast. Every scene must be credible, readable, and evidence-legible without UI assistance. Interior design here is not craft — it is mechanics.
 
 **Ale & Ambition** requires its tavern to function simultaneously as a visual environment and as a management interface. Stations must be spatially legible as interactive elements from the hub position. The interior layout is also a UX layout. A player who cannot read the station arrangement in two seconds will struggle with the management loop regardless of how well the underlying system is built.
 
@@ -52,7 +52,7 @@ All three projects this year depend heavily on interior quality, but the nature 
 
 Before leaving the greybox phase, each project must satisfy the following minimum tests. These are not suggestions — they are gates. Do not place final assets until every item on this list is confirmed.
 
-**Cob Cop — each investigation interior:**
+**Cobb Cop — each investigation interior:**
 
 - Can the player identify the investigation zone on entry without any UI prompt?
 - Are all evidence interaction points reachable from the entry position without unnecessary backtracking in the intended discovery sequence?
@@ -76,9 +76,9 @@ Before leaving the greybox phase, each project must satisfy the following minimu
 
 ## §3 — Spatial Grammar: Primary Paths, Zones, and Sightlines
 
-### Cob Cop — Sightlines as Investigation Design
+### Cobb Cop — Sightlines as Investigation Design
 
-For Cob Cop, sightline management in the greybox is the primary tool for controlling the investigation arc without scripted sequences or UI waypoints. The sequence in which evidence is discovered is largely determined by the sequence in which evidence becomes visible to the player as they move through the space.
+For Cobb Cop, sightline management in the greybox is the primary tool for controlling the investigation arc without scripted sequences or UI waypoints. The sequence in which evidence is discovered is largely determined by the sequence in which evidence becomes visible to the player as they move through the space.
 
 Map your intended discovery sequence before building the greybox. Then build the geometry so that each piece of evidence enters the player's sightline approximately when they should discover it in the sequence. Evidence that is visible from the entry point will be investigated first — which may or may not be where you want the arc to begin. Evidence that requires the player to cross the room and turn a corner will be discovered later.
 
@@ -102,11 +102,11 @@ ReBeat's platforming spaces should treat sightlines primarily as camera composit
 
 ## §4 — Functional Zoning
 
-### Cob Cop — Zone Type per Scene Function
+### Cobb Cop — Zone Type per Scene Function
 
-Each Cob Cop investigation interior should map to the following zone structure:
+Each Cobb Cop investigation interior should map to the following zone structure:
 
-| Zone type | What it contains in Cob Cop |
+| Zone type | What it contains in Cobb Cop |
 |:---|:---|
 | Orientation | Entry point, immediate visual survey of the space, no evidence in this area |
 | Activity | Main investigation area, ambient props establishing the scene context |
@@ -131,13 +131,13 @@ Any of these alone is sufficient. Combining two of the three is robust. Do not r
 
 ## §5 — Lighting Hierarchy
 
-### Cob Cop — Cinematic Lighting as Investigation Tool
+### Cobb Cop — Cinematic Lighting as Investigation Tool
 
-Cob Cop's lighting must perform two jobs simultaneously: it must be atmospherically credible (the space must feel like a real location with plausible light sources) and it must be functionally hierarchical (evidence props must be the brightest, most visually prominent objects in their zones).
+Cobb Cop's lighting must perform two jobs simultaneously: it must be atmospherically credible (the space must feel like a real location with plausible light sources) and it must be functionally hierarchical (evidence props must be the brightest, most visually prominent objects in their zones).
 
 The point interest light in each interaction zone should be positioned to fall directly on the evidence prop, not on the surrounding decorative context. A common error is lighting a zone evenly and then adding a point interest light to the general area — this creates ambient brightness without directing the player's attention. The point interest light must be **narrower and brighter than its surrounding zone fill**, creating a visible pool of elevated luminance that marks the interaction position.
 
-For Cob Cop's scene transition lighting — entering a new location, discovering a key piece of evidence, completing an investigation — use a Blueprint timeline-driven light state change as described in the base notes. The transition from the neutral investigation state to the "evidence found" state should be a coordinated change: light colour shift, a brief Niagara particle, and an optional camera cut to a close-up framing. These three elements together constitute a readable state signal. Any one of them alone is insufficient.
+For Cobb Cop's scene transition lighting — entering a new location, discovering a key piece of evidence, completing an investigation — use a Blueprint timeline-driven light state change as described in the base notes. The transition from the neutral investigation state to the "evidence found" state should be a coordinated change: light colour shift, a brief Niagara particle, and an optional camera cut to a close-up framing. These three elements together constitute a readable state signal. Any one of them alone is insufficient.
 
 ### Ale & Ambition — Day/Night Lighting States
 
@@ -157,9 +157,9 @@ If ghosts are rendered with an emissive material or a custom post-process effect
 
 ## §6 — Prop Readability
 
-### Cob Cop — Evidence as Hero Props
+### Cobb Cop — Evidence as Hero Props
 
-Every piece of evidence in Cob Cop is a hero prop by definition. The set dressing hierarchy must be built around evidence placement first: the evidence position is established, its silhouette and value contrast are confirmed, and then secondary and tertiary props are placed around it in ways that do not compete with it visually.
+Every piece of evidence in Cobb Cop is a hero prop by definition. The set dressing hierarchy must be built around evidence placement first: the evidence position is established, its silhouette and value contrast are confirmed, and then secondary and tertiary props are placed around it in ways that do not compete with it visually.
 
 The most likely failure mode is **tertiary prop contamination** — placing small detail objects (cups, papers, personal items) near evidence props at similar scale and value, reducing the evidence's visual priority. Every tertiary prop within one metre of an evidence item should be checked against the silhouette test: if it reads as clearly as the evidence item under a single directional light, it is competing with the evidence and should be moved, scaled down, or darkened.
 
@@ -173,9 +173,9 @@ The station's hero prop should be the largest, most silhouette-distinct object i
 
 ## §7 — Mechanics-Driven Layout
 
-### Cob Cop — Layout as Investigation Sequence
+### Cobb Cop — Layout as Investigation Sequence
 
-The layout of each Cob Cop investigation interior is the investigation sequence. The order in which rooms connect, the order in which sightlines reveal evidence, and the distance between related evidence pieces all determine the shape of the player's investigative experience.
+The layout of each Cobb Cop investigation interior is the investigation sequence. The order in which rooms connect, the order in which sightlines reveal evidence, and the distance between related evidence pieces all determine the shape of the player's investigative experience.
 
 For each scene, define the intended discovery sequence before building the greybox. Then build the spatial layout so that movement through the space produces discoveries in the intended order. The geometry teaches the sequence — the player should be able to solve the investigation by following the spatial logic of the room, even without explicit prompting.
 
@@ -207,9 +207,9 @@ Define the tavern's landmark anchor early and protect it: the central bar counte
 
 For tavern upgrades — new stations added, existing stations visually upgraded — design the upgrade additions to respect the existing zone structure rather than disrupt it. A new station added during progression should slot into an existing interaction zone slot, not require the player to re-learn the tavern's spatial logic from scratch.
 
-### Cob Cop — The Hub/Precinct as an Orientation Anchor
+### Cobb Cop — The Hub/Precinct as an Orientation Anchor
 
-If Cob Cop features a precinct or home-base hub that the player returns to between missions, apply the same landmark anchor principle: one visually dominant element that is always in the player's first sightline on return, and that communicates the player's current mission state through environmental signals rather than UI alone. A notice board, a case map, or a key prop that updates with mission progress — something that makes the hub feel like it is accumulating history rather than remaining static across the session.
+If Cobb Cop features a precinct or home-base hub that the player returns to between missions, apply the same landmark anchor principle: one visually dominant element that is always in the player's first sightline on return, and that communicates the player's current mission state through environmental signals rather than UI alone. A notice board, a case map, or a key prop that updates with mission progress — something that makes the hub feel like it is accumulating history rather than remaining static across the session.
 
 ---
 
@@ -225,7 +225,7 @@ Before committing to a primary architecture kit, build a small test assembly in 
 
 ## §10 — Scale and Ergonomics
 
-### Cob Cop — Keep Rooms Tight
+### Cobb Cop — Keep Rooms Tight
 
 The instinct when building investigation spaces is to make them large enough to feel "realistic". Real investigation locations — offices, residential rooms, back-of-house service areas — are almost always smaller than students expect, and significantly smaller than the spaces students naturally build.
 
@@ -243,13 +243,13 @@ For play spaces, ReBeat's third-person camera requires sufficient ceiling cleara
 
 ## §11 — Environmental Storytelling
 
-### Cob Cop — Storytelling Is the Mechanic
+### Cobb Cop — Storytelling Is the Mechanic
 
-For Cob Cop, environmental storytelling is not supplementary atmosphere — it is the core investigation mechanic. The crime scene tells the story; the player reads it. This means that every prop placement decision is simultaneously a narrative decision and a game design decision.
+For Cobb Cop, environmental storytelling is not supplementary atmosphere — it is the core investigation mechanic. The crime scene tells the story; the player reads it. This means that every prop placement decision is simultaneously a narrative decision and a game design decision.
 
 Apply the cause-and-effect chain technique explicitly to each crime scene: define the narrative sequence of the event that occurred in the space, then place props that represent each step in that sequence in spatial positions that lead the player through it. The final evidence item in the chain should occupy the interaction zone that is last in the discovery sequence, positioned so that finding it feels like a conclusion rather than an interruption.
 
-Particular attention should be paid to **temporal layering** — Cob Cop's investigation spaces need to communicate not just what happened, but when. A crime scene that occurred recently has different physical characteristics than one that occurred days ago. Material state, dust accumulation, food decomposition, and blood oxidation are all temporal signals. Use Substrate materials to express this layering: a fresh scene looks different from an old one, and that difference carries investigative information.
+Particular attention should be paid to **temporal layering** — Cobb Cop's investigation spaces need to communicate not just what happened, but when. A crime scene that occurred recently has different physical characteristics than one that occurred days ago. Material state, dust accumulation, food decomposition, and blood oxidation are all temporal signals. Use Substrate materials to express this layering: a fresh scene looks different from an old one, and that difference carries investigative information.
 
 ### Ale & Ambition — Tavern History Through Materials
 
@@ -259,7 +259,7 @@ Define a **wear parameter** in the tavern's primary surface materials (floor, ba
 
 ### ReBeat — Environmental Storytelling as Score Feedback
 
-ReBeat's environmental storytelling serves a different purpose than Cob Cop or Ale & Ambition — it communicates **escalating stakes** rather than investigative narrative. As ghost count increases and the play space becomes more threatening, the environment should reflect that escalation through material emissive intensity, Niagara density, and lighting temperature drift toward cooler, more urgent values.
+ReBeat's environmental storytelling serves a different purpose than Cobb Cop or Ale & Ambition — it communicates **escalating stakes** rather than investigative narrative. As ghost count increases and the play space becomes more threatening, the environment should reflect that escalation through material emissive intensity, Niagara density, and lighting temperature drift toward cooler, more urgent values.
 
 This is state-driven environmental storytelling: the space itself tells the player how close they are to failure through visual intensity, not through explicit UI. Define two or three environment states tied to ghost count thresholds and implement the transitions as Blueprint-driven light and material parameter changes on the same pattern as the lighting state system described in §5.
 
@@ -269,7 +269,7 @@ This is state-driven environmental storytelling: the space itself tells the play
 
 These questions supplement the generic reflective questions in the base document. Answer them with reference to your specific project and current build state.
 
-### Cob Cop
+### Cobb Cop
 
 1. For your primary investigation scene: draw the intended discovery sequence as a numbered list. Then walk the greyboxed space and record the actual sequence in which each evidence item enters your sightline. Where do the two sequences diverge, and what spatial change would align them?
 
