@@ -2,7 +2,7 @@
 
 This repository contains all notes and assignment briefs materials for **COMP I8015 — 3D Game Development**. 
 
-- The **Notes** folder holds a seven-part  series on interior level design for Unreal Engine. 
+- The **Notes** folder holds a multi-part series on interior level design for Unreal Engine. 
 - The **Briefs** folder contains the formal CA briefs for all assessed components.
 
 ## Table of Contents
