@@ -256,7 +256,7 @@ flowchart TD
     L0["Layer 0 — Architectural Shell"]
     L1["Layer 1 — Structural Features"]
     L2["Layer 2 — Zone-Defining Furniture"]
-    L3["Layer 3 — Hero Props\nInteractables"]
+    L3["Layer 3 — Hero Props"]
     L4["Layer 4 — Secondary Props"]
     L5["Layer 5 — Tertiary Props"]
     L6["Layer 6 — Lighting Practicals"]
