@@ -9,7 +9,7 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 
 | # | Filename | Description | Link |
 |:--|:---------|:------------|:-----|
-| 1 | `interior_level_design.md` | **Interior Level Design** — Spatial grammar, lighting hierarchy, object hierarchy, and production discipline for enclosed spaces | [Notes/interior_level_design_base.md](Notes/interior_level_design.md) |
+| 1 | `interior_level_design.md` | **Interior Level Design** — Spatial grammar, lighting hierarchy, object hierarchy, and production discipline for enclosed spaces | [Interior Level Design](Notes/interior_level_design.md) |
 | 2 | `interaction_design.md` | **Interaction Design** — The three verbs (Examine / Collect / Modify): spatial placement, feedback obligations, UI requirements, and gating as narrative | *(Work In Progress)* |
 | 3 | `puzzle_architecture.md` | **Puzzle Architecture and State Management** — Designing puzzles as state machines, causal chains, gating patterns, and dead-end prevention | *(Work In Progress)* |
 | 4 | `storytelling_through_materials.md` | **Storytelling Through Materials** — Substrate layering, surface narrative, roughness and value as storytelling signals, custom material authorship | *(Work In Progress)* |
