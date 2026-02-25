@@ -9,13 +9,14 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 
 | # | Filename | Description | Link |
 |:--|:---------|:------------|:-----|
-| 1| `interior_level_design.md` | Interior Level Design — Spatial grammar, lighting hierarchy, object hierarchy, and production discipline for enclosed spaces | [Interior Design](Notes/interior_level_design.md) |
-| 2 | `interaction_design.md` | Interaction Design — The three verbs (Examine / Collect / Modify): spatial placement, feedback obligations, UI requirements, and gating as narrative | *(Work In Progress)* |
-| 3 | `puzzle_architecture.md` | Puzzle Architecture and State Management — Designing puzzles as state machines, causal chains, gating patterns, and dead-end prevention | *(Work In Progress)* |
-| 4 | `storytelling_through_materials.md` | Storytelling Through Materials — Substrate layering, surface narrative, roughness and value as storytelling signals, custom material authorship | *(Work In Progress)* |
-| 5 | `atmosphere_and_feedback.md` | Atmosphere and Feedback — Niagara VFX as a design tool, Blueprint-driven light state transitions, and non-UI feedback design | *(Work In Progress)* |
-| 6 | `camera_design.md` | Camera Design and Cinematic Progression — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
-| 7 | `playability_and_polish.md` | Playability, Iteration, and the Final Craft Pass — Readability audits, structured playtesting, iterating from feedback | *(Work In Progress)* |
+| 1 | `interior_level_design.md` | **Interior Level Design** — Spatial grammar, lighting hierarchy, object hierarchy, and production discipline for enclosed spaces | [Notes/interior_level_design_base.md](Notes/interior_level_design.md) |
+| 2 | `interaction_design.md` | **Interaction Design** — The three verbs (Examine / Collect / Modify): spatial placement, feedback obligations, UI requirements, and gating as narrative | *(Work In Progress)* |
+| 3 | `puzzle_architecture.md` | **Puzzle Architecture and State Management** — Designing puzzles as state machines, causal chains, gating patterns, and dead-end prevention | *(Work In Progress)* |
+| 4 | `storytelling_through_materials.md` | **Storytelling Through Materials** — Substrate layering, surface narrative, roughness and value as storytelling signals, custom material authorship | *(Work In Progress)* |
+| 5 | `atmosphere_and_feedback.md` | **Atmosphere and Feedback** — Niagara VFX as a design tool, Blueprint-driven light state transitions, and non-UI feedback design | *(Work In Progress)* |
+| 6 | `ui_design.md` | **UI Design** — Diegetic and non-diegetic UI conventions, visual consistency, widget design for interaction verbs, inventory and feedback UI patterns in Unreal Engine | *(Work In Progress)* |
+| 7 | `camera_design.md` | **Camera Design and Cinematic Progression** — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
+| 8 | `playability_and_polish.md` | Playability, Iteration, and the Final Craft Pass — Readability audits, structured playtesting, iterating from feedback, and repository craft | *(Work In Progress)* |
 
 ## CA Briefs
 
