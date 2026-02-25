@@ -20,9 +20,36 @@ format:
 
 # Interior Level Design for 3D Games
 
-> These notes are production-oriented. The goal is not to study interior design in the abstract — it is to help you build a clean, readable, shippable vertical slice. Every principle here connects directly to a design or implementation decision you need to make during production. Read the accompanying **Project Companion** for application of these principles to this year's specific games.
+> These notes are production-oriented. The goal is not to study interior design in the abstract — it is to help you build a clean, readable, shippable vertical slice within your assignment(s). Every principle here connects directly to a design or implementation decision you need to make during production. 
 
 ---
+
+## Ten Guideline for Interior Level Design
+
+These are the non-negotiable principles that govern every decision in this document. They are not guidelines — they are the conditions under which an interior space works. Violating any one of them does not produce an interesting exception; it produces a broken space.
+
+1. **Greybox before you decorate.** Validate spatial flow, scale, and mechanic fit before placing a single final asset. A polished broken layout is still broken.
+
+2. **Every light must be motivated.** If you cannot identify the physical source that justifies an engine light, the light has no right to exist in the scene.
+
+3. **Three depths, always.** Every space, viewed from its entry point, must read across foreground, mid-ground, and background. A flat room is a legibility failure.
+
+4. **One point of interest per zone.** Two competing focal lights give the player no priority signal. Competing centres of attention cancel each other out.
+
+5. **Hero props are earned, not placed.** A space with ten hero-scale objects has no heroes. Keep the count ruthlessly low. Scarcity is what creates significance.
+
+6. **Every prop must justify its presence.** Through mechanic, narrative, or habitation logic. Decoration for its own sake is set dressing without authorship.
+
+7. **The primary path is communicated by light, openness, and silhouette — not by markers.** If the player needs a waypoint to navigate your space, the space is unreadable.
+
+8. **Scale is set by the mannequin, not by feel.** Calibrate every door frame, surface height, and ceiling against the default mannequin before assets are placed.
+
+9. **Negative space is a design tool.** Empty floor communicates pacing, exposure, and the scale of what surrounds it. Filling every surface is a greybox failure.
+
+10. **The space must play before it looks.** A layout that has not been tested in greybox cannot be rescued by material quality, lighting, or post-process polish.
+
+---
+
 
 ## 1. Why Interior Spaces Demand Discipline
 
@@ -196,7 +223,66 @@ Implement state-based lighting through **Blueprint timeline-driven interpolation
 
 ---
 
-## 6. Prop Readability: Silhouette, Value, and the Set Dressing Hierarchy
+## 6. The Hierarchy of Objects in an Interior Scene
+
+Every object in an interior belongs to a layer of a structured hierarchy. This hierarchy is not a decorative convention — it is a production discipline that determines the order in which objects are placed, the visual weight each layer is permitted to carry, and the way in which each layer must serve the layers above it. Understanding the hierarchy is what separates a space that has been *designed* from one that has been *filled*.
+
+Build from the outside in, and from the bottom of the hierarchy upward. Never place objects from a lower layer before the objects above them have been finalised. The most common production failure in student interiors is bottom-up placement: surfaces covered in tertiary detail before the hero prop layout has been validated. Every iteration on the hero layout then requires undoing decorating work, which in practice means the layout is never properly iterated at all.
+
+### The Seven Layers
+
+**Layer 0 — Architectural Shell.** Walls, floors, and ceilings. The spatial container. This layer defines room volume, occlusion boundaries, and the maximum navigable area. It is built in the greybox phase from BSP or modular kit geometry. Nothing else is placed until this layer is complete and correct at human scale. The shell must enclose volumes cleanly for Lumen to function efficiently — gaps, floating geometry, and overlapping surfaces all impose rendering cost and compromise indirect lighting quality.
+
+**Layer 1 — Structural Features.** Doorframes, windows, archways, load-bearing columns, staircases, and built-in architectural fixtures. These break the shell into connected traversable spaces and establish the scene's primary sightlines. Every structural feature is a greybox decision: a doorframe determines what is visible from where; an archway defines a zone threshold; a column defines a navigation channel. These are never decorative elements — they are spatial constraints that determine everything placed inside them. Confirm that all structural features read correctly against the mannequin before proceeding.
+
+**Layer 2 — Large Zone-Defining Furniture and Fixtures.** Counters, large tables, shelving units, beds, sofas, workstations — objects large enough to shape navigation flow and define what each zone is used for. These are the first layer of objects that communicate zone identity to the player. A counter tells the player "this is a service point." A cluster of chairs around a table tells the player "this is a social zone." Large furniture must be placed with navigation channels in mind: every corridor between furniture pieces should be at least 120 cm to remain navigable. Do not crowd this layer. The primary function of large furniture is spatial definition, not decoration.
+
+**Layer 3 — Hero Props.** Gameplay-significant unique objects: an interactable item, a piece of narrative evidence, a puzzle element, a collectible, a quest-critical station. Hero props exist at this layer because they require the full spatial context of Layers 0–2 to be placed correctly. A hero prop needs clear backing geometry, deliberate lighting, and isolation from visual competitors. Its silhouette must be identifiable from its approach path, and its value contrast against its background must be sufficient to pull the eye. Keep the count to one or two per zone. More than two heroes per zone means no zone has a clear focal point.
+
+**Layer 4 — Secondary Props.** Environmental context objects that establish plausible habitation: additional furniture, equipment, containers, decorative architectural elements, books, implements, equipment racks. These populate the zone with evidence of use and purpose without competing with hero props. A secondary prop should not silhouette strongly against its background. It should occupy mid-range values that read as environmental texture rather than as individual objects demanding attention. The relationship between secondary props and hero props is the relationship between a supporting cast and a lead — present, purposeful, subordinate.
+
+**Layer 5 — Tertiary Props.** Small surface details: cups, papers, scattered tools, personal items, clutter that implies specific habitation by a specific character or group. These are the final compositional layer and must be placed last. A tertiary prop that silhouettes clearly against its background, or that carries higher value contrast than a nearby hero prop, is a placement failure. Tertiary props must sit in the same value range as the surfaces they occupy. Their purpose is to answer the question "who lived here?" — not to add visual interest to the scene overall.
+
+**Layer 6 — Lighting Practicals.** Visible physical light source props: ceiling lamps, desk lights, monitors, candles, emissive surface panels, fire elements, window apertures. These are placed after the prop hierarchy is finalised because their position depends on what they need to illuminate and what narrative context the scene has established. Every engine light in the scene must be matched to a practical at this layer. A practical placed after hero positioning ensures that each light source reinforces the spatial hierarchy rather than competing with it. Adjust engine light intensity and colour temperature to match each practical's implied character — colour temperature communicates zone identity; intensity communicates spatial priority.
+
+**Layer 7 — Particles and VFX.** Dust motes, steam, fire, emissive flickers, atmospheric haze, light shafts. Applied last, once the full visual weight of the scene is established. Particles must never be used to compensate for a weak prop hierarchy — they are enhancement, not correction. A light shaft through a dusty window amplifies an already-legible space; it cannot rescue an illegible one. Keep particle density inversely proportional to prop density. A busy zone needs almost no particle work. An empty, monumental space can carry more.
+
+### Hierarchy Diagram
+
+The following diagram represents the layered dependency structure of an interior scene. Each layer depends on the correctness of all layers above it. Assets at any layer should never be placed before the layers that contain them have been validated.
+
+```mermaid
+flowchart TD
+    L0["Layer 0 — Architectural Shell"]
+    L1["Layer 1 — Structural Features"]
+    L2["Layer 2 — Zone-Defining Furniture"]
+    L3["Layer 3 — Hero Props\nInteractables"]
+    L4["Layer 4 — Secondary Props"]
+    L5["Layer 5 — Tertiary Props"]
+    L6["Layer 6 — Lighting Practicals"]
+    L7["Layer 7 — Particles and VFX"]
+
+    L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
+
+  style L0 fill:#9E2A2A,color:#ffffff,stroke:#C44444
+    style L1 fill:#A84E2A,color:#ffffff,stroke:#C87050
+    style L2 fill:#B87228,color:#ffffff,stroke:#D49040
+    style L3 fill:#C49228,color:#ffffff,stroke:#E0B040
+    style L4 fill:#7A9A28,color:#ffffff,stroke:#9ABE40
+    style L5 fill:#4A9040,color:#ffffff,stroke:#6AB060
+    style L6 fill:#2E7A3A,color:#ffffff,stroke:#489A58
+    style L7 fill:#1A6830,color:#ffffff,stroke:#348850
+```
+
+### Placement Order Is Production Order
+
+The hierarchy defines a strict placement sequence. In Unreal, this maps directly to the order in which you should work:
+
+Begin with the architectural shell (Layer 0) built from modular kit pieces on the correct grid, fully enclosed. Confirm it is complete before adding structural features (Layer 1). Once the doorframe positions and window placements are correct, bring in large furniture (Layer 2) and confirm that navigation channels remain usable. Only then finalise hero prop positions (Layer 3) with full silhouette and lighting consideration. Secondary props (Layer 4) follow once heroes are locked. Tertiary details (Layer 5) are last in the prop pass. After all geometry and props are finalised, place practicals (Layer 6) and tune engine lights to match them. Particles and VFX (Layer 7) are the final pass — never before the lighting hierarchy is established.
+
+Any workflow that deviates from this order — particularly any workflow that places tertiary detail before hero positions are confirmed — will produce iteration debt that compounds at every subsequent stage of production.
+
+## 6a. Prop Readability: Silhouette, Value, and the Set Dressing Hierarchy
 
 A player cannot interact with an object they cannot identify as significant. Readability is not a visual polish concern — it is a gameplay concern. An unreadable interactable is an inaccessible mechanic.
 
