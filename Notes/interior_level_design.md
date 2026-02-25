@@ -253,14 +253,14 @@ The following diagram represents the layered dependency structure of an interior
 
 ```mermaid
 flowchart TD
-    L0["Layer 0 — Architectural Shell"]
-    L1["Layer 1 — Structural Features"]
-    L2["Layer 2 — Zone-Defining Furniture"]
-    L3["Layer 3 — Hero Props"]
-    L4["Layer 4 — Secondary Props"]
-    L5["Layer 5 — Tertiary Props"]
-    L6["Layer 6 — Lighting Practicals"]
-    L7["Layer 7 — Particles and VFX"]
+ L0["Layer 0 — Architectural Shell (i.e. Walls, Floors, Ceilings — defines volume, occlusion, Lumen boundaries)"]
+    L1["Layer 1 — Structural Features (i.e. Doorframes, Windows, Columns, Stairs — establishes sightlines and zone thresholds)"]
+    L2["Layer 2 — Zone-Defining Furniture (i.e. Counters, Tables, Shelving, Beds — defines zone identity and navigation channels)"]
+    L3["Layer 3 — Hero Props (i.e. Interactables, Evidence, Quest Objects — 1–2 per zone, high value contrast, clear silhouette)"]
+    L4["Layer 4 — Secondary Props (i.e. Furniture context, Equipment, Containers — mid-range values, subordinate to heroes)"]
+    L5["Layer 5 — Tertiary Props (i.e. Surface detail, Clutter, Personal items — same value range as surface, never silhouette)"]
+    L6["Layer 6 — Lighting Practicals (i.e. Lamps, Screens, Candles, Windows — every engine light requires a motivated source)"]
+    L7["Layer 7 — Particles and VFX (i.e. Dust, Steam, Fire, Light shafts — enhancement only, applied last)"]
 
     L0 --> L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
 
