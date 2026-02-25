@@ -495,3 +495,46 @@ These questions are intended for individual reflection after a greybox review an
 11. **State communication.** Describe exactly what changes in your space when the most important gameplay event occurs. How many of those changes are spatial — lighting, prop state, VFX — versus UI-only? Could a player understand that the event occurred if all UI were hidden?
 
 12. **Production honesty.** What is the one spatial or lighting decision in your current build that you know is wrong but have not fixed yet? What is the actual reason it has not been fixed — time, difficulty, or the expectation that it will not be noticed? What is the cost of shipping it in its current state?
+
+---
+
+## Finding Your Environment — CA Practical Steps
+
+> Complete these steps before we begin the next topic in this sequence. The goal is a single committed environment choice, supported by references and a sketch. Not a shortlist. A decision.
+
+### Step 1 — List Three Real-World Interior Types
+
+Write down three real-world interior types you find **visually interesting** — a server room, a Victorian apothecary, a flooded archive. Pick a space supported by free third-party assets. 
+
+### Step 2 — Apply the Puzzle Filter
+
+For each, ask: **does it support three physically separated puzzle elements?** A broom cupboard does not. A disused laboratory does. Eliminate any space that cannot plausibly contain the puzzle structure the ICA requires.
+
+### Step 3 — Name the Three-Beat Narrative
+
+For each surviving option, **write one sentence for each narrative beat**:
+
+- **Confusion** — what is the starting state and what does the player not yet understand?
+- **Insight** — what does examination and interaction reveal?
+- **Resolution** — what does the final discovery unlock?
+
+If you cannot answer each beat in a single sentence, the environment has no inherent story. Pick a different one.
+
+### Step 4 — Find Three Photographic References
+
+Find **three real-world photographic references** for your top choice — not concept art, not game screenshots. Architectural photography, interior design catalogues, historical archives. If you cannot find three strong references, the environment is too vague to build from.
+
+### Step 5 — Sketch a Top-Down Layout
+
+Sketch a rough top-down layout containing **at minimum four distinct areas**:
+
+- One orientation zone
+- At least two activity zones
+- One transition space
+
+Confirm that the three puzzle elements can be **physically separated** across those zones.
+
+### Step 6 — Apply the Gut Check
+
+Would you want to be locked in this room for five minutes? If the honest answer is no, pick a different one.
+
