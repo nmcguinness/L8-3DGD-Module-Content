@@ -14,9 +14,9 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | 3 | `puzzle_architecture.md` | **Puzzle Architecture and State Management** — Designing puzzles as state machines, causal chains, gating patterns, and dead-end prevention | *(Work In Progress)* |
 | 4 | `storytelling_through_materials.md` | **Storytelling Through Materials** — Substrate layering, surface narrative, roughness and value as storytelling signals, custom material authorship | *(Work In Progress)* |
 | 5 | `atmosphere_and_feedback.md` | **Atmosphere and Feedback** — Niagara VFX as a design tool, Blueprint-driven light state transitions, and non-UI feedback design | *(Work In Progress)* |
-| 6 | `ui_design.md` | **UI Design** — Diegetic and non-diegetic UI conventions, visual consistency, widget design for interaction verbs, inventory and feedback UI patterns in Unreal Engine | *(Work In Progress)* |
-| 7 | `camera_design.md` | **Camera Design and Cinematic Progression** — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
-| 8 | `playability_and_polish.md` | Playability, Iteration, and the Final Craft Pass — Readability audits, structured playtesting, iterating from feedback, and repository craft | *(Work In Progress)* |
+| 6 | `camera_design.md` | **Camera Design and Cinematic Progression** — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
+| 7 | `playability_and_polish.md` | **Playability, Iteration, and the Final Craft Pass** — Readability audits, structured playtesting, iterating from feedback, and repository craft | *(Work In Progress)* |
+| *[Optional]* | `ui_design.md` | **UI Design** — Diegetic and non-diegetic UI conventions, visual consistency, widget design for interaction verbs, inventory and feedback UI patterns in Unreal Engine | *(Work In Progress)* |
 
 ## CA Briefs
 
