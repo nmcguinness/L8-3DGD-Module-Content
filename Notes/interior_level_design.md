@@ -566,7 +566,7 @@ A hospital dispensary/pharmacy. Narrow counter separating public and staff sides
 
 ### Step 1 — Real-World Interior Type
 
-A hospital dispensary/pharmacy. The space has a well-established real-world grammar: a public-facing counter, a restricted staff preparation area, secured storage, and institutional fittings. Every zone has a known function, which makes the environment immediately legible to a player without exposition.
+The space has a well-established real-world grammar: a public-facing counter, a restricted staff preparation area, secured storage, and institutional fittings. Every zone has a known function, which makes the environment immediately legible to a player without exposition.
 
 ### Step 2 — Puzzle Filter
 
