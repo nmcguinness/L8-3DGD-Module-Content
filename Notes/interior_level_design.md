@@ -498,7 +498,7 @@ These questions are intended for individual reflection after a greybox review an
 
 ---
 
-## Finding Your Environment — CA Practical Steps
+## Finding Your Environment — Practical Steps
 
 > Complete these steps before we begin the next topic in this sequence. The goal is a single committed environment choice, supported by references and a sketch. Not a shortlist. A decision.
 
