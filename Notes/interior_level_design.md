@@ -538,3 +538,84 @@ Confirm that the three puzzle elements can be **physically separated** across th
 
 Would you want to be locked in this room for five minutes? If the honest answer is no, pick a different one.
 
+
+<details style="background:#fcfdff; border:1px solid rgba(0,0,0,0.15); border-radius:10px; padding:0.9rem 1rem; margin:1rem 0;">
+<summary style="cursor:pointer; font-weight:800; list-style:none; margin:0;">
+<h4>Example 1 - Decommissioned Hospital Pharmacy</h4>
+</summary>
+<div style="margin-top:0.8rem;">
+
+> The following example demonstrates how a strong environment choice satisfies each of the six selection steps. Use it as a reference point for the quality of thinking required in your own project submission.
+
+*Late 1970s institutional dispensary. Partially flooded ground floor. Power intermittently restored.*
+
+A hospital dispensary/pharmacy. Narrow counter separating public and staff sides, floor-to-ceiling shelving, a locked drug cabinet, a small preparation area with a sink and weighing equipment. Visually distinctive, institutionally legible, and immediately readable as a space where specific things happened.
+
+<a href="./images/interior/hospital-dispensary-1.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/hospital-dispensary-1.jpg" alt="Hospital dispensary">
+</a>
+
+<a href="./images/interior/hospital-dispensary-3.png" target="_blank" rel="noopener">
+  <img src="./images/interior/hospital-dispensary-3.png" alt="Hospital dispensary">
+</a>
+
+<a href="./images/interior/hospital-dispensary-2.jpg" target="_blank" rel="noopener">
+  <img src="./images/interior/hospital-dispensary-2.jpg" alt="Hospital dispensary">
+</a>
+
+
+### Step 1 — Real-World Interior Type
+
+A hospital dispensary/pharmacy. The space has a well-established real-world grammar: a public-facing counter, a restricted staff preparation area, secured storage, and institutional fittings. Every zone has a known function, which makes the environment immediately legible to a player without exposition.
+
+### Step 2 — Puzzle Filter
+
+Three physically separated elements are natural to the space:
+
+- The **dispensing counter** (public front area)
+- The **preparation bench** (rear staff area)
+- The **locked drug cabinet** (side wall)
+
+The player must move between all three to solve. The space supports this without contrivance — the separation is architectural, not artificial.
+
+### Step 3 — Three-Beat Narrative
+
+- **Confusion** — The player is locked in. The exit is a security door with an electronic lock. Power is out except for emergency lighting. Something went wrong here and no one came back.
+- **Insight** — A dispensing log on the counter names a specific compound. A preparation record on the bench gives the formulation quantities. The cabinet holds the final component — but requires a combination derived from the other two.
+- **Resolution** — The correct combination opens the cabinet, releasing a key card that restores power to the security door and enables escape.
+
+### Step 4 — Photographic References
+
+Abandoned hospital pharmacy photography is well documented. Urban exploration archives, NHS decommissioning records, and medical history collections all yield strong material. Three usable references are findable in under ten minutes. The visual language is consistent: institutional pale green or cream walls, metal shelving with glass-fronted cabinets, linoleum flooring, fluorescent strip lighting, amber prescription bottles, and printed dispensing labels.
+
+### Step 5 — Top-Down Layout
+
+| Zone | Location | Purpose |
+|:-----|:---------|:--------|
+| Orientation | Public side of counter, entrance area | Player reads the space, no immediate interactables |
+| Activity Zone 1 | Behind the counter | Dispensing log — first puzzle clue |
+| Activity Zone 2 | Preparation bench, rear staff area | Formulation record — second puzzle clue |
+| Transition | Narrow doorway between counter and prep area | Pacing beat between zones |
+| Interaction Zone | Locked drug cabinet, side wall | Final puzzle element — combination input |
+
+Four distinct areas, clean physical separation, natural player movement through the space.
+
+### Step 6 — Gut Check
+
+Being locked in a derelict hospital pharmacy with intermittent lighting and no obvious exit is exactly the right level of unease for a five-minute escape room. The space has inherent tension without requiring jump scares, combat, or elaborate narrative setup.
+
+## ICA Requirement Mapping
+
+| ICA Requirement | How this environment satisfies it |
+|:----------------|:----------------------------------|
+| **Examine** | Dispensing log and formulation record — readable props with clear narrative content |
+| **Collect** | Key card retrieved from cabinet on puzzle completion |
+| **Modify** | Cabinet combination input; security door power restoration |
+| **Custom Substrate material** | Peeling institutional paint over metal shelving; water-damaged bottle labels; rust creep on cabinet lock |
+| **Niagara VFX** | Flickering fluorescent light particles; water drip effect on flooded floor area; spark burst on power restoration |
+| **Camera sequence** | Security door unlock reveal — camera pulls back to show the exit becoming accessible |
+| **Environmental storytelling** | Abandoned mid-task dispensing log; overturned stool; water line on shelving implying when the flooding occurred |
+| **Three-depth structure** | Counter at foreground, prep bench at mid-ground, cabinet and exit at background |
+
+</div>
+</details>
