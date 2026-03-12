@@ -54,6 +54,10 @@ This tutorial assumes that you already have a playable Unreal Engine 5 level and
 
 For best results, use a test space that contains both **interior and exterior visibility**, such as a room with windows, a doorway, or a courtyard transition. This makes it easier to evaluate exposure, bounce, shadow softness, volumetric effects, and readability across lighting zones.
 
+<a href="./images/lighting/interior_derelict_corridor.jpg" target="_blank" rel="noopener">
+  <img src="./images/lighting/interior_derelict_corridor.jpg" alt="Derelict Corridor -- Jack McKelvie">
+</a>
+
 ## Workflow Summary
 
 The overall workflow used in this tutorial is shown below.
