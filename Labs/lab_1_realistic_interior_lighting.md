@@ -6,7 +6,7 @@ programme: "BSc (Hons) in Computing in Games Development"
 module_code: "COMP I8015"
 module_title: "3D Game Development"
 stage: 4
-version: "1.0"
+version: "1.1"
 ---
 
 <style>
