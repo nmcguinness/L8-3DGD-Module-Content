@@ -94,7 +94,7 @@ When students skip the inference step, the clue becomes a lookup. When they skip
 ```mermaid
 flowchart TD
     OBS["**Observation**
-    The player spots a meaningful detail"] --> INF["Inference
+    The player spots a meaningful detail"] --> INF["**Inference**
     The player works out what it implies"]
     INF --> ACT["**Action**
     The player examines, collects, or modifies"]
@@ -103,6 +103,12 @@ flowchart TD
     FB --> PROG["**Progress**
     A new clue, state change, or unlock"]
     PROG--> OBS
+
+     style OBS fill:#8A2D2D,color:#ffffff,stroke:#A84444
+    style INF fill:#A14A2D,color:#ffffff,stroke:#C06448
+    style ACT fill:#B86B2A,color:#ffffff,stroke:#D68740
+    style FB fill:#C48B28,color:#ffffff,stroke:#E0A540
+    style PROG fill:#3F7F3A,color:#ffffff,stroke:#5B9F57
 ```
 
 The important design point is that clue solving is **not a single interaction**. It is a **loop** of perception and response.
