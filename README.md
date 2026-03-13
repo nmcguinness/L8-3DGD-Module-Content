@@ -25,7 +25,6 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | 5 | `atmosphere_and_feedback.md` | **Atmosphere and Feedback** — Niagara VFX as a design tool, Blueprint-driven light state transitions, and non-UI feedback design | *(Work In Progress)* |
 | 6 | `camera_design.md` | **Camera Design and Cinematic Progression** — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
 | 7 | `playability_and_polish.md` | **Playability, Iteration, and the Final Craft Pass** — Readability audits, structured playtesting, iterating from feedback, and repository craft | *(Work In Progress)* |
-| *[Optional]* | `ui_design.md` | **UI Design** — Diegetic and non-diegetic UI conventions, visual consistency, widget design for interaction verbs, inventory and feedback UI patterns in Unreal Engine | *(Work In Progress)* |
 
 ## Labs
 
