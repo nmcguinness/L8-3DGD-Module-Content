@@ -32,7 +32,7 @@ p {
 pre, code, kbd, samp, li { text-align: left; }
 </style>
 
-# Building an Object Inspection System
+# Lab 2: Building an Object Inspection System
 
 ## Overview
 
