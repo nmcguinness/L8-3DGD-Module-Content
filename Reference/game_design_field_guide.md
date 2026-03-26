@@ -27,7 +27,7 @@ The failure mode this document is designed to prevent is **unconsidered design**
 The spreadsheet asks you to commit to a position on twenty categories when you begin, in earnest, to work on your game implementation. That commitment serves three purposes. 
 
 - First, it forces you to think through the **implications of your concept** before the cost of changing it is high. 
-- Second, it produces a brief that you can use to evaluate whether a **decision is consistent with the original intent**. 
+- Second, it produces a game concept design that you can use to evaluate whether a **decision is consistent with the original intent**. 
 - Third, it trains the habit of **designing from the outside in**: beginning with the player's experience and working backward to the production decisions that produce it, rather than assembling assets and hoping an experience emerges.
 
 Each section of this document explains what a given category means, why it matters in the context of this ICA, and what each dropdown option commits you to producing. Read the explanation for every option you have selected. If the description does not match what you intended, change your selection. If you selected an option without being able to describe what it means in practice, this document will help you decide whether it is the right choice.
