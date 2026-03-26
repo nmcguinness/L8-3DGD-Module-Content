@@ -5,6 +5,8 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 - The **Notes** folder holds a multi-part series on interior level design for Unreal Engine. 
 - The **Briefs** folder contains the formal CA briefs for all assessed components.
 - The **Labs** folder contains the lab exercises for the content listed in the TOC.
+- The **Reference** folder contains supporting reference documents for use throughout the module.
+
 
 ## Briefs
 
@@ -13,6 +15,12 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | ICA-1 | `2025-26-gd-3dgd-ica-1.md` | Individual CA — Single room-based Interactive Micro-Experience. Design and implement a contained escape-room in Unreal Engine demonstrating craft in environment design, materials, lighting, interaction logic, and iteration. | escape room, Examine, Collect, Modify, Substrate material, Niagara VFX, camera sequence, environmental storytelling, Blueprint, puzzle design | [2025-26 - ICA-1](Briefs/2025-26-gd-3dgd-ica-1.md) |
 | ICA-2 | `2025-26-gd-3dgd-ica-2.2.md` | Individual CA — Technical Specialisation within Collaborative Project (Stage 2). Extend the Semester 1 technical specialisation into a developed Unreal-focused contribution, documented through a single Mahara page and a final screencast. | technical specialisation, collaborative project, Unreal Engine, Mahara, screencast, iteration, critical analysis, individual contribution, portfolio | [2025-26 - ICA-2.2](Briefs/2025-26-gd-3dgd-ica-2.2.md) |
 | GCA-1 | `2025-26-gd-3dgd-gca-1.md` | Group CA — User Testing Lab Report. Design and conduct two rounds of user testing for the team game, analyse the results statistically, and produce a written lab report in Quarto. | user testing, playtest, statistical analysis, confidence interval, correlation, Quarto, lab report, summary statistics, hypothesis testing | [2025-26 - GCA-1](Briefs/2025-26-gd-3dgd-gca-1.md) |
+
+## Reference
+
+| Filename | Description | Link |
+| :- | :- | :- |
+| `game_design_field_guide.md` | **ICA Concept Sheet — Field Reference Guide** — Definitions and design implications for every dropdown option in the ICA Concept Spreadsheet. Covers genre, visual style, colour palette, setting, narrative tone, mood, lighting, camera, audio, UI approach, puzzle type and complexity, play time, asset source, and the three design keyword columns. Use alongside the concept spreadsheet when completing or revising your ICA concept entry. | [ICA Concept Sheet — Field Reference Guide](Reference/game_design_field_guide.md) |
 
 ## Notes - Design to Implementatoin
 
