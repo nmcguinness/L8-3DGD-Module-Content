@@ -22,7 +22,7 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | :- | :- | :- |
 | `game_design_field_guide.md` | **ICA Concept Sheet — Field Reference Guide** — Definitions and design implications for every dropdown option in the ICA Concept Spreadsheet. Covers genre, visual style, colour palette, setting, narrative tone, mood, lighting, camera, audio, UI approach, puzzle type and complexity, play time, asset source, and the three design keyword columns. Use alongside the concept spreadsheet when completing or revising your ICA concept entry. | [ICA Concept Sheet — Field Reference Guide](Reference/game_design_field_guide.md) |
 
-## Notes - Design to Implementatoin
+## Notes - Design to Implementation
 
 | # | Filename | Description | Link |
 |:--|:---------|:------------|:-----|
