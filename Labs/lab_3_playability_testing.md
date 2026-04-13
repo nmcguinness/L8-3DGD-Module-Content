@@ -21,7 +21,7 @@ format:
 
 # Playtesting Lab — Stage 3 Audit and Stage 4 Testing
 
-> This lab has five parts. Parts A and B are **preparatory** — complete them before your Week 11 lab session. Parts C and D are **in-session** — you will run them during the designated testing time. Part E is **post-session** — complete it before writing the GCA1 report. Each task produces a specific output. Collect all outputs: they are the raw material for your GCA1 report.
+> This lab has five parts. Parts A and B are **preparatory** — complete them before your Stage 4 lab session. Parts C and D are **in-session** — you will run them during the designated testing time. Part E is **post-session** — complete it before writing the GCA1 report. Each task produces a specific output. Collect all outputs: they are the raw material for your GCA1 report.
 
 ---
 
@@ -60,9 +60,9 @@ By the end of this lab your team can:
 
 ## Part A — Stage 3 Audit
 
-**Complete before your Week 11 lab session.**
+**Complete before your Stage 4 lab session.**
 
-You need your Stage 3 session notes, survey responses, or any other records from your Week 7 testing. Open them as a team before beginning.
+You need your Stage 3 session notes, survey responses, or any other records from your testing. Open them as a team before beginning.
 
 ---
 
@@ -136,7 +136,7 @@ For each unobserved or partially observed section, note whether it contains cont
 
 ## Part B — Variable Selection for Stage 4 A/B Testing
 
-**Complete before your Week 11 lab session.**
+**Complete before your Stage 4 lab session.**
 
 ---
 
@@ -207,7 +207,7 @@ You do not need to list every possible confound — focus on the ones that could
 
 ### Task B5 — Prepare Both Builds
 
-Before the Week 11 session, your team must have two separate, stable builds ready:
+Before the Stage 4 session, your team must have two separate, stable builds ready:
 
 - **Build A** — your current validated build, unchanged
 - **Build B** — Build A with exactly one change applied (the variable from B3)
@@ -220,7 +220,7 @@ Before the session begins, do a deliberate diff of the two builds and confirm th
 
 ## Part C — Stage 4 Validation Session
 
-**In-session — Week 11 lab.**
+**In-session — Stage 4 lab.**
 
 This part uses your current, stable build (Build A). The goal is to test the unresolved problems identified in Output A3 and the coverage gaps in Output A4.
 
@@ -291,7 +291,7 @@ For each confirmed problem, write a one-sentence fix using the structure: "We wi
 
 ## Part D — Stage 4 Comparative Session
 
-**In-session — Week 11 lab.**
+**In-session — Stage 4 lab.**
 
 This part uses both Build A and Build B. The goal is to generate evidence for or against the hypothesis in Output B3.
 
