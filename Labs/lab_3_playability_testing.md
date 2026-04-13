@@ -92,6 +92,7 @@ Answer the following questions about how Stage 3 was run:
 2. Were all participants given the same briefing before playing?
 3. Did all sessions use the same observation protocol, or did different team members watch for different things?
 4. Were any sessions run under significantly different conditions (different room, different time pressure, different number of observers)?
+5. What confounding variables may have effected the outcome of your tests?
 
 For each "No" answer, note what it means for the reliability of that session's data. Data from inconsistent sessions should be flagged as lower-confidence in your report.
 
@@ -188,7 +189,7 @@ Write your A/B comparison in this formal structure:
 
 ### Task B4 — Identify and Plan for Confounds
 
-Before building your two variants, identify the confounds most likely to threaten the validity of your specific A/B comparison. Use the confound taxonomy in Appendix B of the Playability and Polish notes as your reference.
+Before building your two variants, identify the confounds most likely to threaten the validity of your specific A/B comparison. Use the confound taxonomy in Appendix B of the [Validation Testing, Comparative Analysis, and Evidence-Based Evaluation](https://github.com/nmcguinness/L8-3DGD-Module-Content/blob/main/Notes/testing_analysis_evidence_based_evaluation.md) notes as your reference.
 
 For each confound you identify as relevant, complete the following table:
 
