@@ -27,7 +27,7 @@ format:
 
 ## Overview
 
-You have already collected Stage 3 playtest data (Week 7). This lab guides your team through:
+You have already collected Stage 3 playtest data (Week 9). This lab guides your team through:
 
 - auditing what that data actually contains and what it is worth
 - selecting a single, controlled variable for comparative A/B testing
@@ -55,7 +55,6 @@ By the end of this lab your team can:
 - One team member records all outputs in a shared document during the lab. Rotate this role between Parts C and D.
 - Every task that asks for a written output feeds directly into a named GCA1 section — do not skip it.
 - If a task reveals a problem with your current plan, stop and resolve it before moving on. A problem identified in Part A that is ignored will reappear as a report weakness.
-- Do not test on team members who have already played the game. If you cannot find enough cold participants, flag this to the lab supervisor before beginning Part C.
 
 ---
 
