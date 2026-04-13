@@ -37,7 +37,7 @@ format:
 7. **The win condition is a compound check.** A puzzle that ends when one thing happens is a single-element interaction, not a puzzle.
 8. **The win moment must be authored.** Solve the puzzle and nothing changes is the worst player experience in escape room design.
 9. **The Game State Actor owns all state.** State distributed across individual prop Blueprints is state you cannot debug.
-10. **Cold-playtest before you build.** No designer can accurately predict how a first-time player will read their puzzle.
+10. **Cold-playtest before Stage 1.** No designer can accurately predict how a first-time player will read their puzzle.
 
 ---
 
@@ -50,13 +50,6 @@ Escape room design is a structural problem before it is a creative one. The crea
 **The three most common structural failures.** The first is **unenforceable order**: the intended puzzle sequence is A → B → C, but nothing in the implementation prevents the player from attempting C before A, which either lets them skip the puzzle or produces a confusing blocked state with no explanation. The second is **clue-element proximity collapse**: the clue prop and the element it unlocks are in the same zone, so the player sees both simultaneously, reads neither carefully, and either solves the puzzle trivially or gets confused by the information surplus. The third is **distributed state**: puzzle state is stored across multiple Blueprint actors — a Boolean on the cabinet, another on the keypad, a third on the exit door — and when the puzzle breaks, there is no single place to look.
 
 All three failures are design failures. They are prevented by committing to a structural design before building anything.
-
-<!-- Search: "Outer Wilds" probe cannon signal screenshot | Source: mobiusdigitalgames.com/press | Any shot showing the player navigating between spatially separated puzzle elements — the nomai ruins in Ash Twin or Brittle Hollow are ideal -->
-<a href="./images/puzzle/outer-wilds-probe-cannon.jpg" target="_blank" rel="noopener">
-  <img src="./images/puzzle/outer-wilds-probe-cannon.jpg" alt="Outer Wilds – Spatially Distributed Puzzle">
-</a>
-
-*Outer Wilds builds its puzzles entirely from spatial logic and information gating. The player cannot progress until they have gathered specific knowledge from a spatially distant location, because the causal chain is encoded in the world's geometry. There is no inventory — the information gate is purely the player's memory of what they have observed. The structural principle is identical to the escape room model: clue and element separated, gate enforced by design, not by instruction.*
 
 ---
 
@@ -146,13 +139,6 @@ Design examines deliberately. Each examined prop should deliver exactly the info
 
 **Place the examine target in a different zone from the element it informs.** This is not a stylistic guideline — it is a structural requirement. If the clue prop is in the same zone as the element, the player is likely to observe both simultaneously on their first pass through the zone. They will attempt to interact with the element before reading the clue, fail (if gating is correct) or succeed (if it is not), and either become confused or bypass the examination entirely. The spatial separation between clue and element is what creates the investigation arc.
 
-<!-- Search: "Firewatch" observation tower interior screenshot | Source: camposanto.com/press | Watchtower desk interior showing layered prop dressing — map, tools, notes — each communicating distinct information categories -->
-<a href="./images/puzzle/firewatch-watchtower.jpg" target="_blank" rel="noopener">
-  <img src="./images/puzzle/firewatch-watchtower.jpg" alt="Firewatch – Watchtower Interior">
-</a>
-
-*Firewatch uses prop placement to create information layering: each object in the space communicates exactly one category of information. The map communicates spatial context; the logbook communicates narrative history; the radio communicates the current task. None of these objects fight for interpretive priority. Apply this discipline to every examine target in your escape room — each clue prop communicates one thing, clearly.*
-
 ---
 
 ## 4. Gate Topology
@@ -176,13 +162,6 @@ The false branch response should communicate that the interaction is valid in pr
 ### Gate Strength
 
 A gate is only as strong as its implementation. A gate implemented as a Blueprint `Branch` node on the receiving element's event graph, checking a local Boolean, is inspectable and debuggable. A gate implemented as a comment or a design intention with no Blueprint enforcement does not exist. Every gate in your state graph must correspond to a concrete Boolean check in your Blueprint implementation.
-
-<!-- Search: "The Room" box mechanism screenshot | Source: fireproofgames.com/press | Close-up of a locked mechanism on the ornate box — a keyhole, latch, or encoded panel showing a locked/gated state clearly -->
-<a href="./images/puzzle/the-room-gate.jpg" target="_blank" rel="noopener">
-  <img src="./images/puzzle/the-room-gate.jpg" alt="The Room – Locked Mechanism">
-</a>
-
-*The Room's mechanisms communicate gate state through physical design — a keyhole that cannot be turned without the key, a dial that will not move without knowing the combination. The gate is visible and legible before the player attempts to interact. Design gate states so that the gated condition is readable from the approach path — the player should be able to see that something is locked before they reach it.*
 
 ---
 
@@ -211,13 +190,6 @@ Clue props should meet the following criteria:
 - They are isolated from competing informational props within the immediate zone — no two clue props should be at the same height and value in the same zone.
 
 **Do not dress clue props with excess surrounding information.** A clue prop surrounded by six other decorative notes and papers asks the player to identify which of seven similar objects is the one that matters. This is a readability failure, not a difficulty increase. Make the clue prop the most visually distinct readable object in its zone.
-
-<!-- Search: "Resident Evil Village" puzzle room screenshot | Source: capcom-europe.com/press/ | Any shot of the Dimitrescu castle puzzle chambers showing a clearly isolated, readable key prop or clue note against a structured environment -->
-<a href="./images/puzzle/resident-evil-village-puzzle.jpg" target="_blank" rel="noopener">
-  <img src="./images/puzzle/resident-evil-village-puzzle.jpg" alt="Resident Evil Village – Puzzle Room">
-</a>
-
-*RE Village isolates its key props and clue objects from decorative noise through value contrast and spatial isolation. Critical items are brighter, higher-contrast, and positioned away from prop clusters. The player's eye is directed to them without UI intervention. Every examine target in your room should earn the same level of visual priority.*
 
 ---
 
@@ -248,13 +220,6 @@ Before finalising your design document, enumerate every way a player could becom
 - **A reset requirement** — the only resolution is restarting the level.
 
 Any stuck state requiring a reset is a dead end. Redesign the chain to eliminate it. Adding a "reset puzzle" button is not a design solution — it is an admission that the puzzle has a structural fault.
-
-<!-- Search: "Amnesia The Dark Descent" puzzle room screenshot | Source: frictionalgames.com/press | Any interior showing a puzzle object or mechanism in context — the laboratory or archive sections are ideal -->
-<a href="./images/puzzle/amnesia-puzzle.jpg" target="_blank" rel="noopener">
-  <img src="./images/puzzle/amnesia-puzzle.jpg" alt="Amnesia: The Dark Descent – Puzzle Room">
-</a>
-
-*Amnesia's puzzle design is notable for its commitment to state clarity — each interactive element has a visually unambiguous solved and unsolved appearance, and the player's interaction history is always recoverable from the environment. Nothing in the space can be permanently damaged or consumed in a way that blocks progression. Design your escape room to the same standard: no action should produce an irrecoverable state.*
 
 ---
 
@@ -361,7 +326,7 @@ Do not use `GetAllActorsOfClass` on every interaction event — call it once on 
 
 During development, add a **debug print display** to the Game State Actor's `Tick` event (or to a custom `DebugDisplay` function called from `Tick`) that renders the value of every Boolean state variable as an on-screen string in Play mode. A display showing `bClueAExamined: false | bElementASolved: false | bItemCollected: false | bElementCSolved: false` tells you the exact state of the puzzle at any moment during a test run. When something does not fire as expected, the state display tells you immediately which Boolean has not been set, which tells you which transition has not fired, which tells you which gate has not been satisfied.
 
-Remove the debug display before submission.
+Remove the debug display before Stage 1 submission.
 
 ### The Game State Actor as Orchestrator
 
@@ -373,41 +338,31 @@ The `Delay` node before `OnPuzzleSolved` is an orchestration tool. A deliberate 
 
 ---
 
-## 9. Pre-Production Design Thinking
+## 9. The Stage 1 Design Document
 
-There is no formal design document submission for this ICA. What is required is that you can articulate your planned puzzle structure clearly — to yourself first, and to anyone reviewing your work second. The tools in this section are not submission deliverables. They are thinking instruments. Work through each one before you open the engine. If you cannot answer the questions below, you are not ready to build.
+The Stage 1 submission requires you to describe your planned puzzle structure in sufficient detail that a peer could implement it without asking you questions. These notes define what a complete puzzle structure document must contain. Submit nothing less.
 
-### The State Graph
+### Required Content
 
-Draw a directed graph showing every state, every transition, and every gate condition. Nodes are named states. Edges are labeled with the verb and condition that fires the transition. The graph must have exactly one initial node and exactly one terminal node. A pencil sketch is sufficient — it does not need to be digital. What matters is that you can draw it completely from memory. If you cannot, you do not yet fully understand your own puzzle.
+**State graph diagram.** A directed graph showing every state, every transition, and every gate condition. Nodes are named states. Edges are labeled with the verb and condition that fires the transition. The graph has exactly one initial node and exactly one terminal node. This can be hand-drawn and photographed, diagrammed digitally (Miro, draw.io, Figma), or produced as a Mermaid flowchart in your Quarto document.
 
-### The Causal Chain
+**Causal chain prose.** One sentence per step of the causal chain, written as a player-perspective sequence: "The player examines X, which tells them Y, which allows them to do Z to element W." Every step in the state graph must appear in the prose chain.
 
-Write one sentence per step of the solution sequence from the player's perspective: "The player examines X, which tells them Y, which allows them to do Z to element W." If any sentence requires more than one clause to express the connection, the link is too complex or the causal logic is unclear. If any step in your state graph does not appear in the prose chain, you have a state transition with no causal motivation.
+**Element descriptions.** For each puzzle element: what is it, what is its initial state, what is its solved state, what gate condition must be satisfied before it can be solved, and what transition does solving it enable.
 
-### Element and Gate Inventory
+**Clue prop placement rationale.** For each clue prop: where is it placed relative to the element it informs, and what spatial strategy ensures the player discovers it before attempting the element.
 
-For each puzzle element, be able to state: what it is, what its initial and solved states look like visually, what gate condition must be satisfied before it can be solved, and what transition solving it enables. For each gate, be able to state what feedback the player receives on the false branch — the response when they attempt the interaction before the gate condition is met.
+**Dead-end audit.** A list of every way the player could get stuck, and for each stuck state, confirmation that it is structurally impossible (and why).
 
-### Clue Placement Logic
+**Win moment description.** What feedback fires when the terminal state is reached — camera sequence, lighting change, audio response, exit change.
 
-For each clue prop, be able to state where it is placed relative to the element it informs, and what ensures the player encounters it before attempting that element. "They'll probably find it" is not an answer. The spatial relationship must enforce the discovery sequence.
-
-### Dead-End Audit
-
-List every way the player could become stuck without being able to progress. For each stuck state, confirm that it is structurally impossible — and be able to explain why. Any stuck state you cannot resolve through design is a dead end that will be visible to every first-time player.
-
-### The Win Moment
-
-Be able to describe exactly what happens in the three seconds following the final element's solve: what fires first, what follows, what the room looks, sounds, and feels like in its resolved state. If your answer is "the exit unlocks," your win moment is not yet designed.
-
-> You should be able to trace the causal chain from initial state to terminal state verbally, name the gate condition at each step, and describe the win moment. These are the questions any review conversation will cover. The thinking tools above are the preparation for that conversation, not a document to produce.
+A Stage 1 submission that contains a thematic concept without a state graph, or a clue list without explicit gate conditions, is incomplete. The interview at Stage 1 will ask you to trace the causal chain from initial state to terminal state and to identify the gate condition at each step.
 
 ---
 
 ## 10. Production Checklist
 
-Use this checklist to confirm your puzzle design is structurally complete before you begin building. Every row in the design section must be answerable before you open the engine. Rows marked with a build-phase note should be confirmed during and after implementation.
+Use this checklist to confirm your puzzle design is structurally complete before building. Every row must be checked before Stage 1 submission. Rows marked with a build-phase note should be confirmed again during implementation.
 
 | Checklist Item | Confirmed |
 | :-- | :--: |
@@ -426,7 +381,6 @@ Use this checklist to confirm your puzzle design is structurally complete before
 | Game State Actor pattern planned — state not distributed across prop Blueprints | ☐ |
 | *(Build phase)* Debug state display added to Game State Actor | ☐ |
 | *(Build phase)* Cold playtest completed by someone unfamiliar with the design | ☐ |
-| *(Build phase)* Debug state display removed before submission | ☐ |
 
 ---
 
