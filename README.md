@@ -38,6 +38,6 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | Nr | CA | Filename | Description | Link |
 | :- | :- |:-| :- | :- |
 | 1 | ICA | `realistic_interior_lighting` | A practical lab on building believable interior and exterior lighting using Lumen, skylight / directional light / sky atmosphere, post-process exposure control, atmospheric effects, and final tuning. Students should use either their ICA escape-room greybox or a CubeGrid corridor / room study. | [Lighting Lab - Believable interior lighting](/Labs/lab_1_realistic_interior_lighting.md) |
-| 2 | GCA | `playability_testing` | A structured group lab covering Stage 3 data audit, A/B variable selection, Stage 4 validation session execution, Stage 4 comparative session execution, and post-session statistical analysis. All outputs map directly to GCA1 report sections. | [Playtesting Lab — Stage 3 Audit and Stage 4 Testing](Labs/lab_3_playability_testing.md) |
+| 2 | GCA | `playability_testing` | A structured group lab covering Stage 3 data audit, A/B variable selection, Stage 4 validation session execution, Stage 4 comparative session execution, and post-session statistical analysis. All outputs map directly to GCA1 report sections. | [Playtesting Lab — Stage 3 Audit and Stage 4 Testing](Labs/lab_3_playtesting_stages_3_to_4.md) |
 
 
