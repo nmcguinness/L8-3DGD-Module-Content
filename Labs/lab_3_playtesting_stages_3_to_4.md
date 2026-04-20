@@ -512,3 +512,45 @@ The table below maps each output to the GCA1 section it contributes to. Before l
 | E3 | Comparison plot | Results |
 | E4 | Comparative conclusion paragraph | Discussion, Conclusion |
 | E5 | Correlation matrix with interpretation | Results |
+
+---
+
+## Appendix C — Stage 4 Session Readiness Checklist
+
+Complete this checklist in the class session **before** your Stage 4 testing day. Every unchecked item must be resolved before the session begins. A gap identified today can still be fixed. A gap discovered on the day cannot.
+
+### Part A — Stage 3 Audit Outputs
+
+| Check | Description | ☐ |
+| :-- | :-- | :--: |
+| A1 | Classification table exists with O/P/I totals recorded | ☐ |
+| A2 | Unresolved problems table exists; each entry is an observation (not an interpretation) with a specific proposed fix | ☐ |
+| A3 | Coverage map exists; unobserved sections relevant to testing objectives are flagged as Stage 4 priorities | ☐ |
+
+### Part B — A/B Hypothesis and Build Verification
+
+| Check | Description | ☐ |
+| :-- | :-- | :--: |
+| B1 | A/B hypothesis block complete — all seven components present; metric is quantifiable; written before any Stage 4 data is seen | ☐ |
+| B2 | Confound table exists; tester skill level, unintended build differences, developer presence, and performance variation are explicitly addressed | ☐ |
+| B3 | Both builds launch and run end-to-end on the session machine; deliberate diff confirms exactly one variable differs; unintended differences resolved or documented | ☐ |
+| B4 | Metric recording method written without ambiguity — start point, end point, and unit defined precisely enough that any observer records the same value | ☐ |
+
+### Part C — Logistics and Session Protocol
+
+| Check | Description | ☐ |
+| :-- | :-- | :--: |
+| C1 | Minimum nine cold participants confirmed; comparative session assignment list written in advance (no self-selection) | ☐ |
+| C2 | Standard briefing script written, covers the three required points, reads in under sixty seconds | ☐ |
+| C3 | No-intervention protocol agreed; session controller named | ☐ |
+| C4 | Session machine confirmed; both builds profiled on that machine; comparable stable frame rate; identical peripheral setup for both build groups | ☐ |
+
+### If a Check Fails on the Day
+
+| Failure | Impact | Action |
+| :-- | :-- | :-- |
+| Hypothesis not written before data collection | H₀/H₁ cannot be reported as pre-registered in the GCA1 Introduction | Write before looking at any data — timestamp it |
+| Build B differs from Build A in more than one variable | Comparative result cannot be interpreted | Do not run comparative session until the extra difference is resolved |
+| Fewer than three participants per build | Below minimum for comparative analysis | Run what is available; report the shortfall explicitly as a limitation |
+| Participant has prior knowledge of the game | Data cannot be used for comparative analysis | Exclude from comparative analysis; may still contribute to validation data with a note |
+| No-intervention protocol broken mid-session | Affected participant's data is compromised | Flag the session; exclude from comparative analysis; note in limitations |
