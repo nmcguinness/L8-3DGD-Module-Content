@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:dev.epicgames.com)",
+      "WebSearch",
+      "WebFetch(domain:unrealartoptimization.github.io)",
+      "WebFetch(domain:ph.life)",
+      "WebFetch(domain:docs.coherent-labs.com)",
+      "WebFetch(domain:medium.com)"
+    ]
+  }
+}

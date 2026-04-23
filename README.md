@@ -32,6 +32,8 @@ This repository contains all notes and assignment briefs materials for **COMP I8
 | 4 | `atmosphere_and_feedback` | **Atmosphere and Feedback** — Niagara VFX as a design tool, Blueprint-driven light state transitions, and colour grading with LUTs | [Atmosphere and Feedback](Notes/atmosphere_and_feedback.md) |
 | 5 | `camera_design` | **Camera Design and Cinematic Progression** — Sequencer fundamentals, reveal framing, camera timing, and clean return-to-player patterns | *(Work In Progress)* |
 | 6 | `testing_analysis_evidence_based_evaluation` | **Testing Analysis And Evidence-based Evaluation** — Validation testing, comparative A/B analysis, independent/dependent/confounding variable identification, readability audits, and structured iteration tied to GCA1 deliverables | [Testing Analysis And Evidence-based Evaluation](Notes/testing_analysis_evidence_based_evaluation.md) |
+| 7 | `unreal_optimisation_practical` | **Practical Optimisation in Unreal Engine 5** — Blueprint caching, tick reduction, materials, textures, LODs, instancing, lighting, and profiling with stat commands and Unreal Insights | [Practical Optimisation in Unreal Engine 5](Notes/unreal_optimisation_practical.md) |
+| 8 | `performance_improvement_guide` | **Ten-Step Performance Improvement Guide** — Ordered, time-estimated checklist covering profiling, Blueprint, lighting, shadow casting, textures, draw calls, VFX, audio, collision, and build settings for the final weeks of development | [Ten-Step Performance Improvement Guide](Notes/performance_improvement_guide.md) |
 
 ## Labs
 
