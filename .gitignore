@@ -1,6 +1,10 @@
 # Lecturer
 [Ll]ecturer/
 
+# Claude Code session data
+.claude/
+**/.claude/
+
 # Visual Studio 2015 user specific files
 .vs/
 
